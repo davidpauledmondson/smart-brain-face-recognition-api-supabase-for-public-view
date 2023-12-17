@@ -20,7 +20,7 @@ const supabase = createClient(
   '<your-anon-key>'
 )
 
-app.get('/', (req, res) => { res.send('success!!!') });
+app.get('/', (req, res) => { res.send('success!!! update Dec 16, 2023') });
 app.post('/signin', (req, res) => { signin.handleSignin(req, res, supabase, bcrypt) });
 app.post('/register', (req, res) => { register.handleRegister(req, res, supabase, bcrypt) });
 app.get('/profile/:id', (req, res) => { profile.handleProfileGet(req, res, supabase) });
